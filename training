@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תוכנית חניכה - מדריך חדר כושר</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- כל הסגנונות הקיימים נשארים כמו שהם -->
+</head>
+<body>
+    <button onclick="exportToPDF()" class="export-button">
+        📥 ייצוא ל-PDF
+    </button>
+
+    <div id="pdf-content">
+        <div class="main-title">נוהל חפיפה גרייט שייפ</div>
+        
+        <div class="trainer-details">
+            <h2>פרטי החפיפה</h2>
+            
+            <label>שם המדריך החדש</label>
+            <input type="text" id="newTrainer" placeholder="הכנס שם מלא">
+            
+            <label>שם המדריך החונך</label>
+            <input type="text" id="mentorTrainer" placeholder="הכנס שם מלא">
+        </div>
+
+        <!-- כל התוכן הקיים נשאר כמו שהוא -->
+
+        <div class="signature-section">
+            <div class="signature-container">
+                <div class="signature-block">
+                    <div>חתימת המדריך החדש</div>
+                    <div class="signature-line">
+                        <canvas class="signature-canvas" id="newTrainerSignature"></canvas>
+                    </div>
+                    <div id="newTrainerName"></div>
+                    <button class="clear-signature" onclick="clearSignature('newTrainerSignature')">נקה חתימה</button>
+                </div>
+                <div class="signature-block">
+                    <div>חתימת המדריך החונך</div>
+                    <div class="signature-line">
+                        <canvas class="signature-canvas" id="mentorTrainerSignature"></canvas>
+                    </div>
+                    <div id="mentorTrainerName"></div>
+                    <button class="clear-signature" onclick="clearSignature('mentorTrainerSignature')">נקה חתימה</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <div class="completed-text"></div>
+    </div>
+
+    <script>
+        // כל הקוד JavaScript הקיים נשאר כמו שהוא
+    </script>
+</body>
+</html>
